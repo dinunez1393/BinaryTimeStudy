@@ -2,7 +2,7 @@ package model;
 
 import java.time.LocalDateTime;
 
-public class RawScan {
+public class RawField {
     private String serialNumber;
     private int checkPointId;
     private String checkPointName;
@@ -11,7 +11,7 @@ public class RawScan {
     private String customerPN;
     private String location;
 
-    public RawScan(String serialNumber, int checkPointId, String checkPointName, LocalDateTime transactionDate, String SKU, String customerPN, String location) {
+    public RawField(String serialNumber, int checkPointId, String checkPointName, LocalDateTime transactionDate, String SKU, String customerPN, String location) {
         this.serialNumber = serialNumber;
         this.checkPointId = checkPointId;
         this.checkPointName = checkPointName;
