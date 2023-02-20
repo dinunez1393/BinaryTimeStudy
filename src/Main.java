@@ -48,6 +48,7 @@ public class Main {
             userInput.nextLine();
 
             //Perform reading, cleaning and writing
+            //10,000 and 7 represent the MAX number of rows and columns, respectively
             rawScans = ReaderWriter.csvReader(directoryName + inFile, 10_000, 7);
             cleanedScans = ReaderWriter.dataCleaner(rawScans, checkpointIDs);
             ReaderWriter.csvWriter(directoryName + outFile, outFileHeader, cleanedScans, 7);
